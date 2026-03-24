@@ -1,7 +1,7 @@
 // Je gaat functies schrijven die we kunnen hergebruiken om een lijst met eindcijfers van studenten te checken. Je zult over de cijfers heen moeten itereren (hoe pak je dat aan?),
 // maar ook een manier moeten vinden om hetgeen dat je verzamelt ergens te bundelen. Op deze manier zul je ontdekken hoe je omgaat met scope. Pak vooral het hoofdstuk op EdHub over for-loops er nog eens bij!
 // Tip: je mag hier geen ingebouwde object methoden gebruiken, dus daar hoef je niet naar te kijken.
-console.log('-------------Opdracht 1-------------');
+console.log('-------------Opdracht 1a-------------');
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 /* Opdracht  1: Cum Laude */
@@ -20,11 +20,11 @@ for (let i = 0; i < grades.length; i++) {
     if (grades[i] === 8 || grades[i] > 8) {
         amountOfCumLaude += 1;
     }
-
 }
 console.log(amountOfCumLaude);
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
+console.log('-------------Opdracht 1b-------------');
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
@@ -34,7 +34,16 @@ console.log(amountOfCumLaude);
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
-
+function cumLaude(anyArray) {
+    let amountOfCumLaude = 0;
+    for (let i = 0; i < anyArray.length; i++) {
+        if (anyArray[i] === 8 || anyArray[i] > 8) {
+            amountOfCumLaude += 1;
+        }
+    }
+    return amountOfCumLaude;
+}
+console.log(cumLaude(grades));
 
 
 /* Opdracht  2: Gemiddeld cijfer */
