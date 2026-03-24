@@ -86,14 +86,17 @@ function averageGrade(anyArray) {
         totalGrade += anyArray[i];
         averageGradeNumber = totalGrade / anyArray.length;
     }
-    return averageGradeNumber;
+    return averageGradeNumber.toFixed(2);
 }
 
-console.log(averageGrade([8, 9, 4, 6, 10]));
+console.log(averageGrade(grades));
 
 /* 2c: Afronden op twee decimalen */
+console.log('-------------Opdracht 2c-------------');
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
+
+//Toegepast op opdracht 2b
 
 
 
