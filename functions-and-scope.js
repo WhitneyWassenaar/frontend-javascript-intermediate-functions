@@ -57,17 +57,18 @@ console.log('-------------Opdracht 2a-------------');
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
-let averageGrade = 0;
+let averageGradeNumber = 0;
 let totalGrade = 0;
 for (let i = 0; i < grades.length; i++) {
-    totalGrade += grades[i]
-    averageGrade = totalGrade / grades.length
+    totalGrade += grades[i];
+    averageGradeNumber = totalGrade / grades.length;
 }
 
-console.log(averageGrade);
+console.log(averageGradeNumber);
 
 
 /* 2b: Omschrijven tot een herbruikbare functie */
+console.log('-------------Opdracht 2b-------------');
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
@@ -77,6 +78,18 @@ console.log(averageGrade);
 // averageGrade([6, 4, 5]) geeft 5
 // averageGrade([8, 9, 4, 6, 10]) geeft 7.4
 
+function averageGrade(anyArray) {
+    let averageGradeNumber = 0;
+    let totalGrade = 0;
+
+    for (let i = 0; i < anyArray.length; i++) {
+        totalGrade += anyArray[i];
+        averageGradeNumber = totalGrade / anyArray.length;
+    }
+    return averageGradeNumber;
+}
+
+console.log(averageGrade([8, 9, 4, 6, 10]));
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
