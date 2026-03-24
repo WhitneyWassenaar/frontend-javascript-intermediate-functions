@@ -95,10 +95,8 @@ console.log(averageGrade(grades));
 console.log('-------------Opdracht 2c-------------');
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
-
+console.log('-------------Toegepast op opdracht 2b-------------');
 //Toegepast op opdracht 2b
-
-
 
 
 /* Bonusopdracht: hoogste cijfer */
