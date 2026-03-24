@@ -47,7 +47,7 @@ console.log(cumLaude(grades));
 
 
 /* Opdracht  2: Gemiddeld cijfer */
-
+console.log('-------------Opdracht 2a-------------');
 /* 2a: Script schrijven  */
 // De studenten-administratie moet ieder blok opnieuw berekenen wat het gemiddelde eindcijfer is, maar we beginnen met de grades array van hierboven.
 // Schrijf de stapjes om dit te kunnen berekenen eerst uit en vraag jezelf de volgende dingen af:
@@ -57,6 +57,14 @@ console.log(cumLaude(grades));
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
+let averageGrade = 0;
+let totalGrade = 0;
+for (let i = 0; i < grades.length; i++) {
+    totalGrade += grades[i]
+    averageGrade = totalGrade / grades.length
+}
+
+console.log(averageGrade);
 
 
 /* 2b: Omschrijven tot een herbruikbare functie */
