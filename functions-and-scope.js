@@ -83,13 +83,12 @@ console.log('-------------Opdracht 2a-------------');
 //* Ik verzamel array-items, die elk een waarde bevatten, die ik aanspreek met array[i]
 //* Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
 
-let averageGradeNumber = 0;
+
 let totalGrade = 0;
 for (let i = 0; i < grades.length; i++) {
     totalGrade += grades[i];
-    averageGradeNumber = totalGrade / grades.length;
 }
-
+averageGradeNumber = totalGrade / grades.length;
 console.log(averageGradeNumber);
 
 
