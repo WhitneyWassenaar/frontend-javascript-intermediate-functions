@@ -15,10 +15,18 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6
+
 //-------------Stappenplan 1a-------------
-// Ik check of iedere waarde van deze array 8 of hoger is door een if-statement te gebruiken. Als de waarde 8 of hoger is, tel 1 op in een variabele die staat voor het aantal cijfers die aan deze conditie voldoen
-// Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
-// Zoals ik al eerder had vermeld houd je dat bij door daarvoor een variabele aan toe te wijzen, bijvoorbeeld: amountOfCumLaude = 0; en dan als de conditie true is, 0amountOfCumLaude += 1;
+// 1. Je wilt alle waarden in een array checken. Daarvoor gebruik je een for-loop. Ik schrijf dus eerst de standaard constructie van de for-loop.
+// 2. Een array begint vanaf 0. De waarde wordt gecheckt met 'i' vanaf 0, tot de laatste item van de array.
+// 3. Om te itereren tot de laatste array-item mag 'i' niet groter zijn dan de lengte van de array. Dus: i < grades.length; Er wordt geïtereerd met stapjes van 1, dus i++.
+// 4. In de for loop schrijf ik een conditie die checkt of de array-item gelijk of hoger is dan 8.
+// 5. Om bij te houden hoeveel array-items voldoen aan deze conditie, kunnen we deze waarden opslaan in een variabele. Dus elke keer dat een conditie 'true' is, wordt er += 1 opgeteld.
+// 6. Als laatste schrijf ik een console.log() functie om het resultaat van de totale hoeveelheid studenten die cum laude zijn geslaagd te kunnen zien.
+
+// * Ik check of iedere waarde van deze array 8 of hoger is door een if-statement te gebruiken. Als de waarde 8 of hoger is, tel 1 op in een variabele die staat voor het aantal cijfers die aan deze conditie voldoen
+// * Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
+// * Zoals ik al eerder had vermeld houd je dat bij door daarvoor een variabele aan toe te wijzen, bijvoorbeeld: amountOfCumLaude = 0; en dan als de conditie true is, amountOfCumLaude += 1; binnen in de if-statement.
 
 let amountOfCumLaude = 0;
 for (let i = 0; i < grades.length; i++) {
@@ -62,6 +70,9 @@ console.log('-------------Opdracht 2a-------------');
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
+
+//-------------Stappenplan 1a-------------
+//
 let averageGradeNumber = 0;
 let totalGrade = 0;
 for (let i = 0; i < grades.length; i++) {
