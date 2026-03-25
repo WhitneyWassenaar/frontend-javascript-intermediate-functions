@@ -143,7 +143,7 @@ console.log('-------------Opdracht 3a-------------');
 //* Met een for-loop
 //* Als nieuwe waarde hoger is dan huidige waarde, vervang huidige waarde met nieuwe waarde, anders behoud huidige waarde.
 
-let highestGrade = 0;
+let highestGrade = grades[0];
 for (let i = 0; i < grades.length; i++) {
     if (grades[i] > highestGrade) {
         highestGrade = grades[i];
