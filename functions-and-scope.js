@@ -108,10 +108,12 @@ function averageGrade(anyArray) {
         totalGrade += anyArray[i];
     }
     let averageGradeNumber = totalGrade / anyArray.length;
-    return averageGradeNumber.toFixed(2);
+    return Number(averageGradeNumber.toFixed(2));
 }
 
 console.log(averageGrade(grades));
+// console.log(typeof averageGrade(grades));
+// toFixed() geeft blijkbaar een string terug. Dus ook al zie je 6.64, dat is dus nog steeds een string...
 
 /* 2c: Afronden op twee decimalen */
 console.log('-------------Opdracht 2c-------------');
