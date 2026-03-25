@@ -100,7 +100,7 @@ console.log('-------------Toegepast op opdracht 2b-------------');
 
 
 /* Bonusopdracht: hoogste cijfer */
-
+console.log('-------------Opdracht 3a-------------');
 /* 3a: Script schrijven  */
 // Schrijf een script die op basis van de grades array (hierboven) checkt wat het hoogst behaalde cijfer is. Je mag hier geen bestaande methoden voor gebruiken. Schrijf de stapjes eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe kan ik iedere waarde van de array langsgaan?
