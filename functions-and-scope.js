@@ -4,7 +4,7 @@
 console.log('-------------Opdracht 1a-------------');
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-/* Opdracht  1: Cum Laude */
+/* Opdracht 1: Cum Laude */
 
 /* 1a: Script schrijven  */
 // De administratie moet weten hoeveel studenten er dit blok cum laude zijn afgestudeerd (8 of hoger). Daar moeten namelijk speciale diploma's voor besteld worden.
@@ -22,7 +22,7 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // 3. Om te itereren tot de laatste array-item mag 'i' niet groter zijn dan de lengte van de array. Dus: i < grades.length; Er wordt geïtereerd met stapjes van 1, dus i++.
 // 4. In de for loop schrijf ik een conditie die checkt of de array-item gelijk of hoger is dan 8.
 // 5. Om bij te houden hoeveel array-items voldoen aan deze conditie, kunnen we deze waarden opslaan in een variabele. Dus elke keer dat een conditie 'true' is, wordt er += 1 opgeteld.
-// 6. Als laatste schrijf ik een console.log() functie om het resultaat van de totale hoeveelheid studenten die cum laude zijn geslaagd te kunnen zien.
+// 6. Als laatste schrijf ik een console.log() functie om het resultaat van de totale hoeveelheid studenten die Cum Laude zijn geslaagd te kunnen zien.
 
 // * Ik check of iedere waarde van deze array 8 of hoger is door een if-statement te gebruiken. Als de waarde 8 of hoger is, tel 1 op in een variabele die staat voor het aantal cijfers die aan deze conditie voldoen
 // * Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
