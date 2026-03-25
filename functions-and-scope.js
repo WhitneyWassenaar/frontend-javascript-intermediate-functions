@@ -66,13 +66,23 @@ console.log('-------------Opdracht 2a-------------');
 // Schrijf de stapjes om dit te kunnen berekenen eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe wordt een gemiddelde berekend?
 // * Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen?
-// * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
+// * Hoe zorg ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
-//-------------Stappenplan 1a-------------
-//
+//-------------Stappenplan 2a-------------
+// 1. Je wilt alle waarden in een array bij elkaar optellen. Je zal dan een for-loop moeten gebruiken om langs elke waarde in de array langs te gaan.
+// 2. Je wil het totaal van alle waarden in een array ergens opslaan, dat zal dus in een variabele moeten. Ik declareer de variabele buiten de for loop omdat ik de variabele ook bij de volgende opdracht nodig heb
+// 3. Je wil ook het gemiddelde in een variabele opslaan, dus ik declareer daarvoor ook een variabele, ook buiten de for-loop.
+// 4. In de for-loop tel ik bij elke iteratie de waarde van de array op.
+// 5. In de for-loop bereken ik het gemiddelde van het totaal door (totale hoeveelheid / array.length) en sla het op in een variabele
+// 6. Ik log de variabele waar het gemiddelde in is opgeslagen buiten de for loop
+
+//* Een gemiddelde wordt berekend door het totaal te delen door de hoeveelheid waarden die bij elkaar is opgeteld
+//* Ik verzamel array-items, die elk een waarde bevatten, die ik aanspreek met array[i]
+//* Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
+
 let averageGradeNumber = 0;
 let totalGrade = 0;
 for (let i = 0; i < grades.length; i++) {
