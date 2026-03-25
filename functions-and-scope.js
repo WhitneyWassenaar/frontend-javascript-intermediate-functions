@@ -50,7 +50,7 @@ console.log('-------------Opdracht 1b-------------');
 function cumLaude(anyArray) {
     let amountOfCumLaude = 0;
     for (let i = 0; i < anyArray.length; i++) {
-        if (anyArray[i] === 8 || anyArray[i] > 8) {
+        if (anyArray[i] >= 8) {
             amountOfCumLaude += 1;
         }
     }
