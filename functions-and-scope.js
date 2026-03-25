@@ -15,7 +15,7 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6
-//-------------Stappenplan-------------
+//-------------Stappenplan 1a-------------
 // Ik check of iedere waarde van deze array 8 of hoger is door een if-statement te gebruiken. Als de waarde 8 of hoger is, tel 1 op in een variabele die staat voor het aantal cijfers die aan deze conditie voldoen
 // Als je de lengte van de array aanspreekt dan maakt het niet uit hoe lang een array is, als je i < array.length invoert in de for-loop, dan blijft de code itereren tot de laatste array-item
 // Zoals ik al eerder had vermeld houd je dat bij door daarvoor een variabele aan toe te wijzen, bijvoorbeeld: amountOfCumLaude = 0; en dan als de conditie true is, 0amountOfCumLaude += 1;
