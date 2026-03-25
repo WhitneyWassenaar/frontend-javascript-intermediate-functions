@@ -88,9 +88,8 @@ let totalGrade = 0;
 for (let i = 0; i < grades.length; i++) {
     totalGrade += grades[i];
 }
-averageGradeNumber = totalGrade / grades.length;
+let averageGradeNumber = totalGrade / grades.length;
 console.log(averageGradeNumber);
-
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 console.log('-------------Opdracht 2b-------------');
@@ -104,13 +103,11 @@ console.log('-------------Opdracht 2b-------------');
 // averageGrade([8, 9, 4, 6, 10]) geeft 7.4
 
 function averageGrade(anyArray) {
-    let averageGradeNumber = 0;
     let totalGrade = 0;
-
     for (let i = 0; i < anyArray.length; i++) {
         totalGrade += anyArray[i];
-        averageGradeNumber = totalGrade / anyArray.length;
     }
+    let averageGradeNumber = totalGrade / anyArray.length;
     return averageGradeNumber.toFixed(2);
 }
 
