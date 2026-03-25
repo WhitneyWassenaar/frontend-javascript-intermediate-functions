@@ -163,9 +163,12 @@ console.log('-------------Opdracht 3b-------------');
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
 
 function highestGrade(anyArray) {
-    for (let i = 0; i < grades.length; i++) {
-        if (grades[i] > highestGrade) {
-            highestGrade = grades[i];
+    let highestGradeVariable = anyArray[0];
+    for (let i = 0; i < anyArray.length; i++) {
+        if (anyArray[i] > highestGradeVariable) {
+            highestGradeVariable = anyArray[i];
         }
     }
+    return highestGradeVariable;
 }
+console.log(highestGrade(grades));
