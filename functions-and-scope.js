@@ -112,7 +112,7 @@ function averageGrade(anyArray) {
 }
 
 console.log(averageGrade(grades));
-// console.log(typeof averageGrade(grades));
+// console.log(typeof averageGrade(grades)); check type van variabele
 // toFixed() geeft blijkbaar een string terug. Dus ook al zie je 6.64, dat is dus nog steeds een string...
 
 /* 2c: Afronden op twee decimalen */
@@ -122,18 +122,34 @@ console.log('-------------Opdracht 2c-------------');
 console.log('-------------Toegepast op opdracht 2b-------------');
 //Toegepast op opdracht 2b
 
-
 /* Bonusopdracht: hoogste cijfer */
 console.log('-------------Opdracht 3a-------------');
 /* 3a: Script schrijven  */
 // Schrijf een script die op basis van de grades array (hierboven) checkt wat het hoogst behaalde cijfer is. Je mag hier geen bestaande methoden voor gebruiken. Schrijf de stapjes eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe kan ik iedere waarde van de array langsgaan?
 // * Op welke conditie moet ik checken?
-// * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
+// * Hoe zorg ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 9
 
+//-------------Stappenplan 3a-------------
+// 1. Je wilt alle waarden in een array checken. Daarvoor gebruik je een for-loop. Ik schrijf dus eerst de standaard constructie van de for-loop.
+// 2. Maar wat wil ik checken? De hoogste cijfer in de array
+// 3. Ik zal een variabele moeten aanmaken die per iteratie checkt of de nieuwe waarde hoger is dan de huidige. De variabele begint bij 0.
+// 4. Als de nieuwe waarde groter is dan de huidige waarde dan wordt de variabele ge-update met de nieuwe waarde. Zo niet, dan blijft de variabele dezelfde waarde houden.
+// 5. Als de for-loop klaar is met itereren wordt de variabele in de console gelogd.
+
+//* Met een for-loop
+//* Als nieuwe waarde hoger is dan huidige waarde, vervang huidige waarde met nieuwe waarde, anders behoud huidige waarde.
+
+let highestGrade = 0;
+for (let i = 0; i < grades.length; i++) {
+    if (grades[i] > highestGrade) {
+        highestGrade = grades[i];
+    }
+}
+console.log(highestGrade);
 
 /* 3b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
