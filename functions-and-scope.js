@@ -143,15 +143,16 @@ console.log('-------------Opdracht 3a-------------');
 //* Met een for-loop
 //* Als nieuwe waarde hoger is dan huidige waarde, vervang huidige waarde met nieuwe waarde, anders behoud huidige waarde.
 
-let highestGrade = grades[0];
+let highestGradeVariable = grades[0];
 for (let i = 0; i < grades.length; i++) {
-    if (grades[i] > highestGrade) {
-        highestGrade = grades[i];
+    if (grades[i] > highestGradeVariable) {
+        highestGradeVariable = grades[i];
     }
 }
 console.log(highestGrade);
 
 /* 3b: Omschrijven tot een herbruikbare functie */
+console.log('-------------Opdracht 3b-------------');
 // Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
@@ -160,3 +161,11 @@ console.log(highestGrade);
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
+
+function highestGrade(anyArray) {
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] > highestGrade) {
+            highestGrade = grades[i];
+        }
+    }
+}
