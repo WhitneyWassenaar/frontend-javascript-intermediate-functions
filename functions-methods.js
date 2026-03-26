@@ -1,7 +1,7 @@
 // Je gaat functies schrijven die we kunnen hergebruiken om sommige emailadressen te checken. Nu zul je gaan merken hoe handig functies kunnen zijn!
 // Je zult hier methoden van het String Object voor nodig hebben, dus pak de paragraaf op EdHub over het String Object er even bij.
 
-
+console.log('-------------Opdracht 1-------------');
 /* Opdracht  1 */
 // Schrijf een functie genaamd getEmailDomain, die een emailadres verwacht en de domeinnaam teruggeeft. Een domeinnaam is hetgeen dat na het @ in het adres staat
 // ---- Verwachte uitkomsten:
@@ -9,7 +9,41 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
+// -------------Deze uitwerking is fout :(-------------
+// Want ik gebruik hardcode, en het moet werken voor alle email adressen
 
+// function getEmailDomain(email) {
+//
+//     const noviEduDomain = "novi-education";
+//     const noviDomain = "novi.nl";
+//     const outlookDomain = "outlook.com";
+//     const noDomain = "Domain not found, try again."
+//
+//     if (email.includes("novi-education.nl")) {
+//         return noviEduDomain;
+//     } else if (email.includes("novi.nl")) {
+//         return noviDomain;
+//     } else if (email.includes("outlook.com")) {
+//         return outlookDomain;
+//     } else {
+//         return noDomain;
+//     }
+// }
+//
+// const emailDomain = getEmailDomain("n.eeken@novi-education.nl");
+// console.log(emailDomain);
+// // of gewoon
+// console.log(getEmailDomain("n.eeken@novi-education.nl"));
+
+// -------------Deze uitwerking doet wel wat de opdracht vraagt.-------------
+
+function getEmailDomain(email) {
+    let parts = email.split("@"); // Door gebruik te maken van een split() methode, deel je de string in 2 array-items. Het karakter dat je in split() invoert is het punt van splitten.
+    return parts[1]; // Een array start bij 0, als je een email-adres split op "@" dan heb je dus een deel voor de "@" en een deel na de "@". Je hebt de tweede deel nodig dus voer je index 1 in.
+}
+
+const emailDomain = getEmailDomain("a.wiersma@outlook.com");
+console.log(emailDomain);
 
 
 /* Opdracht  2 */
