@@ -80,3 +80,17 @@ console.log(typeOfEmail("novi.nl.wiersma@outlook.com"));
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+// Stappenplan:
+// 1. [] @ (ik heb uitleg nodig) en . moeten op de juiste plek staan. de . moet altijd na de @ maar wel voor nl of com
+// 2. [✔] Er mag geen , in de email staan dus er moet gebruikgemaakt worden van includes()
+// 3. [✔] .mag niet als allerlaatste karakter voorkomen in een email. Ik zal dus de laatse karakter moeten aanspreken met -1 van een array van de email.
+
+function checkEmailValidity(email) {
+    if (!email.includes("@") || (email.includes(",") || (email[email.length - 1] === "."))) {
+        return false;
+    } else {
+        return true;
+    }
+}
+console.log(checkEmailValidity("n.eeken@n@ovi.nl"));
