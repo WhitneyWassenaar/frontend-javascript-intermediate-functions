@@ -44,6 +44,7 @@ function getEmailDomain(email) {
 const emailDomain = getEmailDomain("a.wiersma@outlook.com");
 console.log(emailDomain);
 
+console.log('-------------Opdracht 2-------------');
 /* Opdracht  2 */
 // Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht. De functie checkt of het emailadres een novi domein heeft (medewerker), een novi-education domein (student), of extern domein (zoals gmail of outlook)
 // ---- Verwachte uitkomsten:
@@ -67,7 +68,7 @@ function typeOfEmail(email) {
 }
 console.log(typeOfEmail("novi.nl.wiersma@outlook.com"));
 
-
+console.log('-------------Opdracht 3-------------');
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
 // Een emailadres is valide wanneer:
