@@ -41,10 +41,8 @@ function getEmailDomain(email) {
     let parts = email.split("@"); // Door gebruik te maken van een split() methode, deel je de string in 2 array-items. Het karakter dat je in split() invoert is het punt van splitten.
     return parts[1]; // Een array start bij 0, als je een email-adres split op "@" dan heb je dus een deel voor de "@" en een deel na de "@". Je hebt de tweede deel nodig dus voer je index 1 in.
 }
-
 const emailDomain = getEmailDomain("a.wiersma@outlook.com");
 console.log(emailDomain);
-
 
 /* Opdracht  2 */
 // Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht. De functie checkt of het emailadres een novi domein heeft (medewerker), een novi-education domein (student), of extern domein (zoals gmail of outlook)
@@ -54,6 +52,20 @@ console.log(emailDomain);
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+function typeOfEmail(email) {
+    const employeeDomain = "novi.nl";
+    const studentDomain = "novi-education.nl";
+    let personType = "Extern";
+    let domain = email.split("@");
+
+    if (domain[1].includes(employeeDomain)) {
+        personType = "Medewerker";
+    } else if (domain[1].includes(studentDomain)) {
+        personType = "Student";
+    }
+    return personType;
+}
+console.log(typeOfEmail("novi.nl.wiersma@outlook.com"));
 
 
 /* Opdracht  3 */
