@@ -171,4 +171,6 @@ function highestGrade(anyArray) {
     }
     return highestGradeVariable;
 }
+
 console.log(highestGrade(grades));
+
